@@ -1,7 +1,7 @@
 export const config = {
-    apiKey: "AIzaSyD297dN4CZb_xg6TbMDojDL-cggma7Q8oM",
-    authDomain: "todo-7b0f0.firebaseapp.com",
-    databaseURL: "https://todo-7b0f0.firebaseio.com",
-    storageBucket: "todo-7b0f0.appspot.com",
-    messagingSenderId: "172022022134"
+    apiKey: "AIzaSyAWNaZm-fyI8I-8ve-JuKEnc4Ksc6MsC_E",
+    authDomain: "todo-9a75d.firebaseapp.com",
+    databaseURL: "https://todo-9a75d.firebaseio.com",
+    storageBucket: "todo-9a75d.appspot.com",
+    messagingSenderId: "1092524260508"
 }

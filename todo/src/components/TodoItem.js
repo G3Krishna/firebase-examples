@@ -1,5 +1,9 @@
 import React, { Component, PropTypes } from 'react';
+<<<<<<< HEAD
 import classnames from 'classnames';
+=======
+import classname from 'classname';
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
 
 import {
     ESCAPE_KEY,
@@ -83,7 +87,11 @@ export default class TodoItem extends Component {
         } = this.props
 
         return (
+<<<<<<< HEAD
             <li className={classnames({
+=======
+            <li className={classname({
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
                 completed: todo.completed,
                 editing: editing
             })}>

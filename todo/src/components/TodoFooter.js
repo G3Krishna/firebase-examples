@@ -1,5 +1,9 @@
 import React, { PropTypes } from 'react';
+<<<<<<< HEAD
 import classnames from 'classnames';
+=======
+import classname from 'classname';
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
 
 import {
     ALL_TODOS,
@@ -30,7 +34,11 @@ export default function TodoFooter ({
                 <li>
                     <a
                         onClick={onChangeNav.bind(this, '/')}
+<<<<<<< HEAD
                         className={classnames({selected: nowShowing === ALL_TODOS})}>
+=======
+                        className={classname({selected: nowShowing === ALL_TODOS})}>
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
                             All
                     </a>
                 </li>
@@ -38,7 +46,11 @@ export default function TodoFooter ({
                 <li>
                     <a
                         onClick={onChangeNav.bind(this, '/active')}
+<<<<<<< HEAD
                         className={classnames({selected: nowShowing === ACTIVE_TODOS})}>
+=======
+                        className={classname({selected: nowShowing === ACTIVE_TODOS})}>
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
                             Active
                     </a>
                 </li>

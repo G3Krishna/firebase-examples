@@ -19,56 +19,61 @@ export function connect(ComposedComponent) {
         }
 
         componentWillMount() {
-            this.database = firebase.database();
+            // this.database = firebase.database();
 
-            this.todosRef = this.database.ref('todos');
-            this.todosRef.off();
+            // this.todosRef = this.database.ref('todos');
+            // this.todosRef.off();
 
-            this.todosRef.on('child_added', this.fillTodos);
-            this.todosRef.on('child_changed', this.fillTodos);
-            this.todosRef.on('child_removed', this.removeTodos);
+            // this.todosRef.on('child_added', this.fillTodos);
+            // this.todosRef.on('child_changed', this.fillTodos);
+            // this.todosRef.on('child_removed', this.removeTodos);
         }
 
         componentWillUnmount() {
-            this.todosRef.off();
+            // this.todosRef.off();
         }
 
         fillTodos(data) {
-            let todo = {
-                [data.key]: data.val()
-            }
+            // let todo = {
+            //     [data.key]: data.val()
+            // }
 
-            this.setState({
-                todos: Object.assign(this.state.todos, todo)
-            })
+            // this.setState({
+            //     todos: Object.assign(this.state.todos, todo)
+            // })
         }
 
         removeTodos(data) {
-            const todos = this.state.todos;
-            let newTodos = {};
+            // const todos = this.state.todos;
+            // let newTodos = {};
 
-            _.forEach(todos, (todo, key) => {
-                if (key !== data.key) {
-                    newTodos[key] = todo;
-                }
-            })
+            // _.forEach(todos, (todo, key) => {
+            //     if (key !== data.key) {
+            //         newTodos[key] = todo;
+            //     }
+            // })
 
-            this.setState({
-                todos: newTodos
-            })
+            // this.setState({
+            //     todos: newTodos
+            // })
         }
 
         addTodo(todo) {
+<<<<<<< HEAD
             var newTodoRef = this.todosRef.push();
             newTodoRef.set(todo);
+=======
+            // var newTodoRef = this.todosRef.push();
+            // newTodoRef.set(todo);
+>>>>>>> 1cc0ac9d47a464d9cdf5346db4e09be29b4f5942
         }
 
         updateTodo(key, field, value) {
-            this.todosRef.child(key).update({ [field]: value });
+            //this.todosRef.child(key).update({ [field]: value });
         }
 
         removeTodo(key) {
-            this.todosRef.child(key).remove();
+            //this.todosRef.child(key).remove();
         }
 
         render() {
